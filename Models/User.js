@@ -7,6 +7,7 @@ let UserSchema = Schema(
         username : {
             type : String,
             trim : true,
+            unique : true,
             required : true
         },
         email : {
@@ -35,7 +36,13 @@ UserSchema.pre("save" , function (next) {
     })
 })
 
-UserSchema.statics.storeValidation = function (body) {
+UserSchema.statics.store = async function (body) {
+    let email = await UserModel.find({email : body.email}).count()
+    let username = await UserModel.find({username : body.username}).count()
+    if (email !== 0 || username !== 0)
+        return {
+            duplicate : "این کاربر در سامانه موجود می باشد"
+        }
     return userStoreValidation(body)
 }
 
