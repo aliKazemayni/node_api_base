@@ -1,2 +1,2 @@
-# api_blog
- Blog application api
+# Node Api Template
+ An initial template for the node api that has a token authentication system
