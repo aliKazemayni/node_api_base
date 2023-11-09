@@ -1,11 +1,11 @@
-POST http://localhost:3000/api/register
+POST http://localhost:3000/register
 Accept: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsaS5rYXplbWF5bmk3OSIsImVtYWlsIjoiYWxpLmthemVtYXluaTc5QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiYWxpMDAxM2thIiwiaWF0IjoxNjk5MzU5MzAwfQ.gH7_Jr0L57Qpnwn8zmqeF3KR6YqfPTa-fVRqSIBdJCg
 Content-Type: application/json
 
 {
-  "username": "ali.kazemayni80",
-  "email": "ali.kazemayni80@gmail.com",
+  "username": "ali.kazemayni84",
+  "email": "ali.kazemayni84@gmail.com",
   "password" : "ali0013ka"
 }
 

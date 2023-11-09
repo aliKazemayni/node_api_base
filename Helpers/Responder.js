@@ -1,23 +1,23 @@
 class Responder{
 
-    success(response, data , message="در خواست با موفقیت انجام شد ."){
+    success(response, data , title){
         return response.status(200).json({
             success : true,
-            message , data
+            title , data
         })
     }
 
-    created(response, data , message="اطلاعات با موفقیت ثبت شد ."){
+    created(response, data , title){
         return response.status(201).json({
             success : true,
-            message , data
+            title , data
         })
     }
 
-    error(response, error , message="درخواست با مشکل مواجه شد لطفا محددا تلاش کنید ."){
+    error(response, error , title){
         return response.status(500).json({
             success : false,
-            message , error
+            title , error
         })
     }
 

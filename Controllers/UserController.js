@@ -46,7 +46,7 @@ class UserController{
     }
 
     show(request , response , next) {
-        Responder.success(response , request.user)
+        Responder.success(response , request.user , request.t('SUCCESS'))
     }
 
 }
