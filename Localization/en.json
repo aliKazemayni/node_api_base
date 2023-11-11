@@ -1,4 +1,8 @@
 {
-	"SUCCESS" : "success",
-	"CREATED" : "created"
+	"success" : "success",
+	"created" : "created",
+	"sign_in" : "registration was done successfully.",
+	"log_in" : "login was successful.",
+	"invalid_data" : "the information entered is not correct",
+	"not_found_data" : "no information was found with this specification."
 }
